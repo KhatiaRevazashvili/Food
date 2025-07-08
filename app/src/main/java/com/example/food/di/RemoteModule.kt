@@ -51,10 +51,4 @@ object RemoteModule {
     @Singleton
     fun provideRecipeService(retrofit: Retrofit): RecipeService =
         retrofit.create(RecipeService::class.java)
-
-
-    @Provides
-    @Singleton
-    fun provideChatbotService(retrofit: Retrofit): ChatbotService =
-        retrofit.create(ChatbotService::class.java)
 }
