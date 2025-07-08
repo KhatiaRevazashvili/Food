@@ -54,7 +54,6 @@ class HostFragment : BaseFragment<FragmentHostBinding>(FragmentHostBinding::infl
             when (destination.id) {
                 R.id.detailFragment -> bottomNavigationView.isVisible = false
                 R.id.searchFragment -> bottomNavigationView.isVisible = false
-                R.id.chatbotFragment -> bottomNavigationView.isVisible = false
                 else -> bottomNavigationView.isVisible = true
             }
         }
